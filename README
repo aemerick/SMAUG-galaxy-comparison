@@ -1,1 +1,32 @@
 
+Proposed Units for Quantities:
+
+Mass : solar masses
+Surface Density: Msun / pc^2
+Density : g / cm^3
+Number Density : cm^-3   By default use total number density, not n_H
+Temperature: K
+SFR: Msun / yr
+
+Proposed Quantities To Submit Reduced Data For, and specifications:
+
+Unless otherwise specified, focus on (10 kpc)^3 box centered on galaxy center for all quantities considered. Unless otherwise specified, use total number density not n_H.
+
+2D Surface Density Images
+    300x300 pixels
+    10 kpc x 10 kpc on a side
+Resolution Maps
+    300x300 pixels
+    Smallest spatial resolution in line of sight
+Phase Diagrams:
+    2D Phase Diagrams: Temperature vs. total number density
+        128x128 pixels
+        log(number density): [-6, 4]
+        log(Temperature): [0,8]
+    1D Histograms:
+        Total Number Density: [-6, 4] - 128 bins
+        Temperature: [0,8] - 128 bins
+    SFR
+        10 Myr bins : SFR = mass_formed_in_bin_time / bin_size
+        Time : [0 , 1] Gyr
+
