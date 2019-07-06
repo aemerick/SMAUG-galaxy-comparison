@@ -1,0 +1,64 @@
+OutputDir      ./        % Output directory
+OutputFile     ics_WLM_1E7DM.dat   % Filename of generated initial conditions
+
+
+CC            15.0	  % halo concentration
+V200          31.50	  % circular velocity v_200 (in km/sec) 1.34d12 M_sun
+LAMBDA         0.035      % spin parameter          
+MD             7.8e-3       % disk mass fraction      
+MB             0.00       % bulge mass fraction     
+FBARY	       0.0         		 % baryonic fraction used to compute the mass of the hot halo
+BETA	       0.5         		 % slope of the beta profile hot halo
+
+MBH            0.0        % black hole mass fraction. If zero, no black
+                          % hole is generated, otherwise one at the centre
+                          % is added.
+ 
+
+JD             1.2e-2	  % disk spin fraction, typically chosen equal to MD
+
+GasFraction           0.875        % relative content of gas in the disk, the rest is stars
+DiskHeight            0.7       % thickness of stellar disk in units of radial scale length 
+		      GasDiskScaleLength    1.	 % gas disk scale length in units of disk scale length
+BulgeSize             0.0        % bulge scale length in units of disk scale length 
+
+
+CoreradiusRatio         0.22     % ratio between core radius of hot halo and scaleradius of dark halo
+Rhotcut			100.0		% Cut-off radius of hot halo in units of core radius
+Fspin			4.0000		% determines angular momentum of hot halo. This factor is multiplied
+					% to the Hernquist radius. All particles within are expected to form the disk.
+					% The fractional angular momentum of this is equal to that of the dark halo.
+
+
+
+N_HALO            10000000     % desired number of particles in dark halo 
+N_DISK            100000       % desired number of collisionless particles in disk 
+N_GAS             700000       % number of gas particles in disk 
+N_BULGE                0       % number of bulge particles 
+
+
+HI_GasMassFraction     0.0	% mass of extended, flat HI disk in terms of the total gas mass
+HI_GasDiskScaleLength  3.0	% scale length of extended gas disk in terms of scale length of the disk 
+MaxGasDiskHeight       10.0	% to prevent too big flaring of isothermal outer gas disk
+
+
+RadialDispersionFactor 1.0      % applies to stellar disk: Gives the radial
+                                % dispersion in units of the z-dispersion
+
+
+MaxSfrTimescale     6.09932     % Gas consumption timescale (multi-phase model)
+FactorSN            0.1         % beta, mass fraction of massive stars (multi-phase model)
+FactorEVP           4000        % A_0, evaporation parameter (multi-phase model)
+TempSupernova       4e+08       % T_SN, effective "supernova temperature",sets feedback energy (multi-phase model)
+TempClouds          1000        % temperature of cold clouds (multi-phase model)
+
+FactorForSofterEQS  0.0         % Can be used to make the equation of state
+                                % softer. For 1.0, the multiphase model is
+				% used, while for 0.0 isothermal at 10^4 K is
+				% assumed. Intermediate values interpolate
+                                % linearly between the two pressures.
+
+HUBBLE			0.7		% Hubble parameter 
+REDSHIFT                0. 
+Omega_m0                0.3
+Omega_L0                0.7 
