@@ -31,4 +31,4 @@ $ICPATH/loadIC.exe "ics_$MDGNAME.dat" > "loadIC.out"
 python "$RUN/extract_vcirc.py"
 
 # zip together:
-tar -cvf "$MDGNAME_IC.tar" "./disk.dat" "./halo.dat" "./vcirc.dat"
+tar -cvf "$MDGNAME_IC.tar" "./disk.dat" "./halo.dat" "./vcirc.dat" "gas.dat"
