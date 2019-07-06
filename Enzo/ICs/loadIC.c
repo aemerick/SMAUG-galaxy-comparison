@@ -1,3 +1,13 @@
+/*
+
+  From Chia-Yu Hu and edited by Andrew Emerick
+  Parser for MakeDiskGalaxy output modified to
+  output data to be used with ProblemTypeAgora
+  in Enzo (see write_enzo_ic.sh for more)
+
+*/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
